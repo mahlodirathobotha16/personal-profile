@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+header {
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    background-color: white;
+}
+
+#home div {
+    flex: 1;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#home h1 span {
+    color: #00bcd4;
+}
+
+#home h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#home p {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home a:hover {
+    background-color: #0097a7;
+}
+
+#home img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #00bcd4;
+}
+
+
+#about {
+    background-color: #f7f7f7;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+#skills {
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#skills h2 {
+    width: 100%;
+}
+
+#skills div {
+    width: 180px;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background-color: #f7f7f7;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+#skills div:hover {
+    transform: translateY(-8px);
+}
+
+#skills i {
+    font-size: 45px;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+
+#education {
+    max-width: 700px;
+    margin:auto
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08)
+}
+
+.education-card i {
+    font-size: 50px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.education h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.education-card h4 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+
+#contact {
+    background-color: white;
+    text-align: center;
+}
+
+#contact p {
+    margin: 15px;
+}
+
+#contact i {
+    color: #00bcd4;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#projects {
+    background-color: #f7f7f7;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 350px;
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e0f7fa;
+
+    border-radius: 50%;
+}
+
+.project-icon i {
+    font-size: 35px;
+    color: #00bcd4;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background-color: #00bcd4;
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home h2 {
+        text-align: center;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+}
